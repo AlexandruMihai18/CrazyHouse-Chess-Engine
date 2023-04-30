@@ -10,9 +10,9 @@ DEPSH := $(OBJSH:.o=.d)
 OBJS := $(SRCS:.cpp=.o)
 DEPS := $(OBJS:.o=.d)
 
-.PHONY: all clean
+.PHONY: build clean
 
-all: $(PRGM)
+build: $(PRGM)
 
 run: $(PRGM)
 	./$(PRGM)
